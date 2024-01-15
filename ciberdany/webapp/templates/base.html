@@ -3,10 +3,26 @@
 <head>
   {% load static tailwind_tags %}
   {% tailwind_css %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body class="text-gray-800">
+
+  <nav class="flex flex-row justify-between px-6 py-4">
+    <div class="logo">
+      <span class="text-lg"><b>Ciber <b class="text-sky-600">Dany</b></b></b>
+    </div>
+    <div class="text-md font-bold">
+      <ul>
+        <li class="float-left"><a href="#" class="hover:text-sky-600 duration-300">Info</a></li>
+        <li class="float-left pl-5"><a href="{{ whatsapp }}" target="_blank" class="hover:text-sky-600 duration-300">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
   {% block content %} {% endblock %}
 </body>
 </html>
