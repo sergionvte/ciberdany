@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_API_KEY }}&libraries=places" defer></script>
+  <script src="{% static 'js/main.js' %}"></script>
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="text-gray-800">
@@ -17,7 +19,7 @@
     </div>
     <div class="text-md font-bold">
       <ul>
-        <li class="float-left"><a href="#description" class="hover:text-sky-600 duration-300">Info</a></li>
+        <li class="float-left"><a href="#services" class="hover:text-sky-600 duration-300">Servicios</a></li>
         <li class="float-left pl-5"><a href="{{ whatsapp }}" target="_blank" class="hover:text-sky-600 duration-300">Contacto</a></li>
       </ul>
     </div>
