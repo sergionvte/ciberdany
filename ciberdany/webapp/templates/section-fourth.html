@@ -1,0 +1,13 @@
+<div class="second bg-gray-200 px-10 py-10 flex justify-center flex-col">
+
+  <div>
+    <h1 id="contact" class="font-bold text-3xl text-center mb-8">Enlaces de contacto</h1>
+  </div>
+
+  <div class="flex flex-row justify-center py-10">
+    {% load static %}
+    <a href="{{ whatsapp }}" target="_blank"><img src="{% static 'img/whatsapp.svg' %}" class="drop-shadow-xl size-20"></img></a>
+    <a href="{{ facebook }}" target="_blank" class="mx-8"><img src="{% static 'img/facebook.svg' %}" class="drop-shadow-xl size-20"></img></a>
+    <a href="{{ mail }}" target="_blank"><img src="{% static 'img/mail.svg' %}" class="drop-shadow-xl size-20"></img></a>
+  </div>
+</div>
