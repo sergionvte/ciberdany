@@ -79,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ciberdany.wsgi.application'
+WSGI_APPLICATION = 'ciberdany.wsgi.app'
 
 
 # Database
