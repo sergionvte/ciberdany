@@ -48,5 +48,4 @@ local_settings.py
 .aws/
 
 # Archivos generados durante el despliegue
-static/
 media/
